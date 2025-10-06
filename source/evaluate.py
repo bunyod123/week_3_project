@@ -6,6 +6,6 @@ class qosh:
     def __init__(self, num):
         self.num = num
         
-    def kop(self):
+    def kop(self,num):
         return num ** 3
-        logger.info("3 ga kopaytirildi")
+        logger.info("3 ga kopaytirildi") 
