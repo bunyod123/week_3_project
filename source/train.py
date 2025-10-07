@@ -5,21 +5,21 @@ from sklearn.metrics import r2_score, mean_absolute_error
 
 logger = logging.getLogger(__name__)
 
-class Trainer:
+class Training:
     def __init__(self, model, x, y):
         self.model = model
         self.x = x
         self.y = y
-        logger.info("Trainer initialized for model: %s, dataset shape: %s", type(model).__name__, x.shape)
+        logger.info(f"Trainer initialized for model with shape: {x.shape}")
 
     def train(self):
         try:
             self.x_train, self.x_test, self.y_train, self.y_test = train_test_split(self.x, self.y, test_size=0.2, random_state=42)
             self.model.fit(self.x_train, self.y_train)
-            logger.info("Model %s trained successfully.", type(self.model).__name__)
+            logger.info("Model trained successfully.")
             return self
         except Exception as e:
-            logger.error("Error during training: %s", str(e))
+            logger.error("Error during training {e}")
             raise e
 
 
