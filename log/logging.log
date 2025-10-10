@@ -1,0 +1,8 @@
+2025-10-10 11:49:47,995-INFO-logging boshlandi
+2025-10-10 11:51:11,241-INFO-datasetlar 2 ga ajratildi numeric va object qiymatga
+2025-10-10 11:57:50,319-INFO-Preprosessnig uchun auto Pipline yaratildi
+2025-10-10 12:09:42,970-INFO-pipline yaratilindi
+2025-10-10 12:12:25,473-INFO-pipline yaratilindi
+2025-10-10 12:24:52,218-INFO-pipline bilan train qildik datasetni
+2025-10-10 12:26:34,990-INFO-predict qilindi
+2025-10-10 12:28:43,408-INFO-predict qilindi
